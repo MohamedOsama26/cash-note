@@ -96,6 +96,8 @@ class _HomeScreenState extends State<HomeScreen> {
               double expenseSum =
                   ExpenseCalculationsService().listSum(snapshot.data!);
               double balance = incomeSum - expenseSum;
+              print('income sum : $incomeSum');
+              print('expense sum : $expenseSum');
 
               return Column(
                 children: [

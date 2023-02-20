@@ -39,7 +39,7 @@ class IncomeCalculationService extends CalculationsService {
   double listSum(List<Item> items) {
     double sum = 0;
     for(Item item in items){
-      if(item.type == 'outcome'){
+      if(item.type == 'income'){
         sum += item.amount;
       }
     }
@@ -54,7 +54,7 @@ class ExpenseCalculationsService extends CalculationsService {
   double listSum(List<Item> items) {
     double sum = 0;
     for(Item item in items){
-      if(item.type == 'outcome'){
+      if(item.type == 'expenditure'){
         sum += item.amount;
       }
     }
